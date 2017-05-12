@@ -7,10 +7,16 @@
     <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
     <meta name="author" content="Afnizar Nur Ghifari">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/kube.css" />
     <link rel="stylesheet" href="styles/font-awesome.css" />
     <link rel="stylesheet" href="styles/custom.css" />
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- endbuild -->
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style>
@@ -21,6 +27,10 @@
 	</style>
 </head>
 <body>
+  <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
 	<!-- Navigation -->
 	<div class="main-nav">
 		<div class="container">
@@ -138,25 +148,30 @@
 			    <div class="unit-50">
 					<ul class="social list-flat right">
 						<li><a href="mailto:afnizarhilmi@gmail.com"><i class="fa fa-send"></i></a></li>
-						<li><a href="http://twitter.com/flamekaizar"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="http://dribbble.com/flamekaizar"><i class="fa fa-dribbble"></i></a></li>
-						<li><a href="http://behance.com/flamekaizar"><i class="fa fa-behance"></i></a></li>
+						<li><a href="http://twitter.com/afnizarnur"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="http://dribbble.com/afnizarnur"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="http://behance.com/afnizarnur"><i class="fa fa-behance"></i></a></li>
 					</ul>
 			    </div>
 			</div>
 		</div>
 	</footer>
 
-	<!-- Javascript -->
-	<script src="scripts/jquery.min.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
 	<script src="scripts/typed.min.js"></script>
-    <script src="scripts/kube.min.js"></script>
-    <script src="scripts/site.js"></script>
-    <script>
+  <script src="scripts/kube.js"></script>
+  <script src="scripts/site.js"></script>
+  <!-- endbuild -->
+  <script>
 		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["far northern sky", "your galaxy", "everywhere"],
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-    </script>
+		  // Change to edit type effect
+		  strings: ["far northern sky", "your galaxy", "everywhere"],
+		  typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+  </script>
 </body>
 </html>
