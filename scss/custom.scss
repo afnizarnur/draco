@@ -1,5 +1,5 @@
 /*
- *  Draco HTML Template by @flamekaizar
+ *  Draco HTML Template by @afnizarnur
  *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
  */
 
@@ -20,7 +20,7 @@
 			}
 			&.active a{
 				color: lighten($primary, 10%);
-			}	
+			}
 		}
 	}
 }
@@ -28,7 +28,7 @@
 .section {
 	&.second{
 		margin-bottom: 90px;
-	}	
+	}
 	.container {
 		position: relative;
 		&:after {
@@ -47,7 +47,7 @@
 .intro {
 	padding: 95px 0px 70px 0px;
 	overflow-x: hidden;
-	
+
 	img {
 		width: 81px;
 		height: 81px;
@@ -130,7 +130,7 @@
 		border: 5px solid #fff;
 		color: #fff;
 	}
-} 
+}
 
 footer {
 	padding: 50px 0px 0px 0px;
