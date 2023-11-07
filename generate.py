@@ -31,7 +31,7 @@ work_experience = {
         },
         {
             "job_title" : "Business Analyst",
-            "location" : "San Antonio, TX",
+            "location" : "San Antonio, TX",            
             "start_date" : "July 2019",
             "end_date" : "July 2020",
             "responsibilities" : [],
