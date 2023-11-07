@@ -1,72 +1,77 @@
+---
+margin-left: 2cm
+margin-right: 2cm
+margin-top: 1cm
+margin-bottom: 2cm
+title: Your Resume in Markdown
+description-meta: 'This is the meta description for the HTML file, and one day the PDF file, for better SEO?'
+keywords:
+  - 'php'
+  - 'mysql'
+  - 'linux'
+author:
+- I am the author
+subject: 'Subject'
+---
+###### [[example.com](https://example.com)] . [ me@example.com] . [ 123 456 7890 ]
 
-# **Colin McAllister**
-I'm a motivated security practitioner and developer, specializing in SIEM/SOAR operations, Python, cybersecurity fundamentals, incident handling, and Sigma rules. I'm dedicated to solving complex security challenges and proactively strengthening systems against emerging threats. I thrive on continuous learning and adaptability in the ever-evolving cybersecurity landscape. Let's connect to collaborate and bolster digital defenses for a safer digital world.
-
-## Work Experience
-### Arctic Wolf Networks
-#### Security Developer
-*July 2020 to Present*
-_San Antonio, TX_
-* coding and stuff
-
-#### Business Analyst
-*July 2019 to July 2020*
-_San Antonio, TX_
-
+### This is where you have your statement, that describes who you are and what you're looking for. Hopefully it's not cliche and it stands out in a good way
 
 ## Skills
 
-**Personal**
-- Problem-Solving
-- Eagerness to Learn
-- Effective Communication
-**Development**
-- Python (OOP)
-- Git
-- AWS
-- Sigma Rules
-**Security**
-- SIEM/SOAR
-- Incident Handling
-- Cybersecurity Fundamentals
-- Threat Hunting
+```programming```
+```devops```
+```databases```
+```containers```
+```linux systems administration```
+```webservers```
+```project management```
+```system architecture & design```
+```entrepreneurship```
+```load/stress testing```
+```WordPress```
 
-## Certifications
+**Programming**: Lua, Haskell, Erlang, Go, Javascript
+**Databases**: MySQL, Postgres, sqlite, SQL Server, Oracle, Pick
+**Linux**: Gentoo, Alpine, CentOS, Ubuntu, Debian
+**DevOps**: Ansible, Chef, Kubernetes, etc.
 
-**GIAC Advisory Board**
-->_2023_
-**[View Certificate](https://www.credly.com/badges/144c9ca4-ff0e-479e-aef6-7fd2c4d344f0/public_url)**
+## Experience
 
-**AWS Certified Cloud Practitioner (CCP)**
-->_2023_
-**[View Certificate](https://www.credly.com/badges/febe16fe-eece-4852-be1d-c57db1e1087b/public_url)**
+### CEO and Founder, Pied Piper
 
-**GIAC Network Forensic Analyst (GNFA)**
-->_2022_
-**[View Certificate](https://www.credly.com/badges/d5ca28ac-7c6e-4baa-beb8-56d4ed5bd3c4/public_url)**
+start-date-end-date, City, State and remote
 
-**GIAC Security Essentials (GSEC)**
-->_2023_
-**[View Certificate](https://www.credly.com/badges/d283e815-124b-4cb1-ba60-149a1a73bf05/public_url)**
+- Things you did/do here
+- More things that you do here.
 
+**Technologies used:** Tell people about the languages, apps, technologies you used to succeed at this job.
+
+### Senior Software Architect, Hooli
+
+2010-2016, San Francisco, CA
+
+- This is the job you had before your latest job
+- Did you do anything that wasn't part of your job description, but you excelled at?
+
+**Technologies used:** Tell people about the languages, apps, technologies you used to succeed at this job.
+
+## Awards & Recognition
+
+- Winner TechCrunch Disrupt 2001
+- People Magazine's sexiest man alive at 123 My Address, MyCity, TX
+
+## Projects
+
+**[*Personal Blog*](http://luther.io)** (2021-present)
+
+- Authored a series of articles covering a wide variety of topics and tools related to technology like PHP, WordPress, Ruby, Linux, Docker, and Privacy.
 
 ## Education
 
-**Master's in Cyber Security**
-->_SANS Technical Institute_
-**2023 to Present**
+### Masters in BS, Example University
 
-**GPA: 4.0**
-**[View Program](https://www.sans.edu/cyber-security-programs/masters-degree/)**
-**Master's in Cyber Security**
-->_SANS Technical Institute_
-**2023 to Present**
-
-**GPA: 4.0**
-**[View Program](https://www.sans.edu/cyber-security-programs/masters-degree/)**
-
----
-
-||: Email: **<colin.mcallister0723@gmail.com>** || website: **<colinmca.com>** :||
-
-
+- 4.0 GPA
+- Deans List
+- Member of xyz club, etc.
+- I didn't really go to college so I don't know what you would put here.

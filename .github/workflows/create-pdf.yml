@@ -1,0 +1,39 @@
+name: Create PDF File
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3 # this checks out the repo in the ubuntu container
+      - name: "Create a folder called output"
+        run: |
+          mkdir output
+          cp resume-stylesheet.css output/resume-stylesheet.css
+          cp resume.md output/${{ github.actor }}-resume.md
+      # Downloading the binaries directly, because they are newer and work better, than the ones that come with Ubuntu latest.
+      - name: "Install pandoc and wkhtmltopdf"
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/3.0.1/pandoc-3.0.1-1-amd64.deb
+          wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+          sudo apt install ./pandoc-3.0.1-1-amd64.deb
+          sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+
+      - name: "Convert MD to HTML"
+        run: |
+          pandoc resume.md -f markdown -t html -c resume-stylesheet.css -s -o output/${{github.actor}}-resume.html
+
+      - name: "Convert HTML to PDF "
+        run: "wkhtmltopdf --enable-local-file-access output/${{github.actor}}-resume.html output/${{github.actor}}-resume.pdf"
+      # run: |
+      #     /usr/bin/pandoc -standalone --output=output/resume.pdf --css=resume-stylesheet.css --from=markdown --to=pdf --pdf-engine=/usr/bin/wkhtmltopdf resume.md
+      - uses: actions/upload-artifact@master
+        with: # basically this will put resume.md, resume.html, resume.pdf and resume-stylesheet.css in a zip file.
+          name: ${{ github.actor }}'s Resume
+          path: output

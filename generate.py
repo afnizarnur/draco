@@ -189,7 +189,7 @@ markdown = f'''
 '''
 
 # Write the content to a Markdown file
-with open("resume.md", "w") as file:
+with open("resume_draco.md", "w") as file:
     file.write(markdown)
     file.write("\n\n")  # Separate the sections with a newline
     # file.write(kate_content)
