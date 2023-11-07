@@ -1,121 +1,72 @@
-# **Colin**
-An engineering manager building and leading engineering teams at Apple Inc
+
+# **Colin McAllister**
+I'm a motivated security practitioner and developer, specializing in SIEM/SOAR operations, Python, cybersecurity fundamentals, incident handling, and Sigma rules. I'm dedicated to solving complex security challenges and proactively strengthening systems against emerging threats. I thrive on continuous learning and adaptability in the ever-evolving cybersecurity landscape. Let's connect to collaborate and bolster digital defenses for a safer digital world.
 
 ## Work Experience
+### Arctic Wolf Networks
+#### Security Developer
+*July 2020 to Present*
+_San Antonio, TX_
+* coding and stuff
 
-### Apple Inc
-->_Copenhagen_
+#### Business Analyst
+*July 2019 to July 2020*
+_San Antonio, TX_
 
-**Engineering Manager**
-->_Jan 2019 to Present_
-# **Kate Miller**
-An engineering manager building and leading engineering teams at Apple Inc
-
-## Work Experience
-
-### Apple Inc
-->_Copenhagen_
-
-**Engineering Manager**
-->_Jan 2019 to Present_
-
-- Increased engineering staff's operating efficiency by providing structure, operating procedures, engineering tools, guidelines, and handbooks.
-- Contributed to company-wide engineering initiatives
-- Supported the engineering and product teams to achieve a high level of technical quality, reliability, and ease-of-use.
-
-**Backend Engineer, Financial Data**
-->_April 2018 to December 2018_
-
-- Built large-scale (petabyte-size) financial data platform/solution/pipelines using Big Data technologies
-- Worked cross-functionally with many teams: Engineering, Treasury, Finance, Accounting, etc.
-- Worked on systems critical to future operation, with impact over billions of dollars of payments volume.
-- Developed a deep understanding of modern payments and financial technology across many countries.
-
-### Stripe
-->_San Francisco, CA_
-
-**Full Stack Engineer**
--> _September 2016 to March 2018_
-
-- Responsible for developing, maintaining internal web applications
-- Collaborated with technical and business staff in design, development, testing and implementation
-- Set up, managed and monitored systems to ensure business continuity
-
-### Bloomberg
-->_New York, NY_
-
-**Software Engineer Intern**
-->_June 2016 to August 2016_
-
-- Worked on Bloomberg's platform to enhance the user experience
-- Proactively participated in the team's weekly meetings and conducted reports on the project's progress
 
 ## Skills
 
-Technical: `Python` `Go` `Microservices Architecture`
+**Personal**
+- Problem-Solving
+- Eagerness to Learn
+- Effective Communication
+**Development**
+- Python (OOP)
+- Git
+- AWS
+- Sigma Rules
+**Security**
+- SIEM/SOAR
+- Incident Handling
+- Cybersecurity Fundamentals
+- Threat Hunting
 
-Management: `Kanban Methodology` `Scrum`
+## Certifications
 
-## Education
+**GIAC Advisory Board**
+->_2023_
+**[View Certificate](https://www.credly.com/badges/144c9ca4-ff0e-479e-aef6-7fd2c4d344f0/public_url)**
 
-### Carnegie Mellon University
-->_2014-2016_
-**Masters of Computer Science**, _Pittsburgh, Pennsylvania_
+**AWS Certified Cloud Practitioner (CCP)**
+->_2023_
+**[View Certificate](https://www.credly.com/badges/febe16fe-eece-4852-be1d-c57db1e1087b/public_url)**
 
-### The State University of NY
-->_2010 - 2014_
-**Bachelor of Engineering**,  _Oswego, New York_
+**GIAC Network Forensic Analyst (GNFA)**
+->_2022_
+**[View Certificate](https://www.credly.com/badges/d5ca28ac-7c6e-4baa-beb8-56d4ed5bd3c4/public_url)**
 
----
+**GIAC Security Essentials (GSEC)**
+->_2023_
+**[View Certificate](https://www.credly.com/badges/d283e815-124b-4cb1-ba60-149a1a73bf05/public_url)**
 
-||: Email: **<katemiller@gmail.com>** || Phone: **+123 456 789** || Website: **[katemiller.com](katemiller.com)** :||
-- Increased engineering staff's operating efficiency by providing structure, operating procedures, engineering tools, guidelines, and handbooks.
-- Contributed to company-wide engineering initiatives
-- Supported the engineering and product teams to achieve a high level of technical quality, reliability, and ease-of-use.
-
-**Backend Engineer, Financial Data**
-->_April 2018 to December 2018_
-
-- Built large-scale (petabyte-size) financial data platform/solution/pipelines using Big Data technologies
-- Worked cross-functionally with many teams: Engineering, Treasury, Finance, Accounting, etc.
-- Worked on systems critical to future operation, with impact over billions of dollars of payments volume.
-- Developed a deep understanding of modern payments and financial technology across many countries.
-
-### Stripe
-->_San Francisco, CA_
-
-**Full Stack Engineer**
--> _September 2016 to March 2018_
-
-- Responsible for developing, maintaining internal web applications
-- Collaborated with technical and business staff in design, development, testing and implementation
-- Set up, managed and monitored systems to ensure business continuity
-
-### Bloomberg
-->_New York, NY_
-
-**Software Engineer Intern**
-->_June 2016 to August 2016_
-
-- Worked on Bloomberg's platform to enhance the user experience
-- Proactively participated in the team's weekly meetings and conducted reports on the project's progress
-
-## Skills
-
-Technical: `Python` `Go` `Microservices Architecture`
-
-Management: `Kanban Methodology` `Scrum`
 
 ## Education
 
-### Carnegie Mellon University
-->_2014-2016_
-**Masters of Computer Science**, _Pittsburgh, Pennsylvania_
+**Master's in Cyber Security**
+->_SANS Technical Institute_
+**2023 to Present**
 
-### The State University of NY
-->_2010 - 2014_
-**Bachelor of Engineering**,  _Oswego, New York_
+**GPA: 4.0**
+**[View Program](https://www.sans.edu/cyber-security-programs/masters-degree/)**
+**Master's in Cyber Security**
+->_SANS Technical Institute_
+**2023 to Present**
+
+**GPA: 4.0**
+**[View Program](https://www.sans.edu/cyber-security-programs/masters-degree/)**
 
 ---
 
-||: Email: **<katemiller@gmail.com>** || Phone: **+123 456 789** || Website: **[katemiller.com](katemiller.com)** :||
+||: Email: **<colin.mcallister0723@gmail.com>** || website: **<colinmca.com>** :||
+
+
