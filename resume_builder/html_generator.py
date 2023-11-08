@@ -139,6 +139,71 @@ def generate_education_and_certs(education=None, certifications=None, awards=Non
 	markup += "</ul></div></div>"
 	return markup
 
+def generate_skills(skills, specialty_skills):
+	markup = '''<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+  			<h1>Technical<br>Skills</h1>'''
+	if specialty_skills:		
+		for skill in specialty_skills:
+			markup += '''<ul class="skill-list list-flat">\n'''
+			markup += f"<li>{skill.get('name')}</li>\n"
+			markup += f"<li>{' / '.join(skill.get('keywords'))}</li>\n"
+			markup += "</ul>\n"
+	if skills:
+		markup += '''<ul class="skill-list list-flat">\n<li>'''
+		for sk in skills:
+			markup += f'''<code>{sk}</code>'''
+	markup += "</li></ul></div></div>"
+	return markup
+
+def generate_quote(basics):
+	if not basics.get('quote',None):
+		return None
+	return f'''<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>{basics.get('quote')}</h1>
+		</div>
+	</div>'''
+
+def generate_footer(json_data):
+    def generate_profiles(profiles):
+        s = f'''<div class="unit-50">
+					<ul class="social list-flat right">'''
+        for profile in profiles:
+            s += f'''<li><a href="{profile.get('url')}" target="_blank"><i class="{profile.get('icon')}"></i></a></li>'''
+        s += '''</ul>
+			    </div>'''
+        return s
+    name = json_data.get('basics').get('name')
+    return f'''<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>{name}</p>
+			    </div>
+			    {generate_profiles(json_data.get('basics').get('profiles', None))}
+			</div>
+		</div>
+	</footer>'''
+ 
+def generate_javascript(json_data):
+    s = '''<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ['''
+    for interest in json_data.get('interests', None):
+        s += f'''"{interest.get('name')}",'''
+    s += '],'
+    s += '''typeSpeed:89,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>'''
+    return s
 
 if __name__ == "__main__":
     # Reading the JSON file
@@ -153,65 +218,14 @@ if __name__ == "__main__":
 	{generate_introduction(json_data.get('basics'))}
 	{generate_work_experience(json_data.get('work_experience'))}
 	{generate_education_and_certs(json_data.get('education', None), json_data.get('certifications', None),json_data.get('awards', None))}
-	<!-- Technical Skills -->
-	<div class="skills section second" id="skills">
-		<div class="container">
-			<h1>Technical<br>Skills</h1>
-			<ul class="skill-list list-flat">
-				<li>Personal</li>
-				<li>Problem-Solving / Eagerness to Learn / Effective Communication</li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Development</li>
-				<li>Python (OOP) / Git / AWS / Sigma Rules </li>
-			</ul>
-			<ul class="skill-list list-flat">
-				<li>Security</li>
-				<li>Network Forensics / SIEM & SOAR / Incident Handling </li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Quote -->
-	<div class="quote">
-		<div class="container text-centered">
-			<h1>Automate / Educate / Secure</h1>
-		</div>
-	</div>
-
-	<footer>
-		<div class="container">
-			<div class="units-row">
-			    <div class="unit-50">
-			    	<p>Colin McAllister</p>
-			    </div>
-			    <div class="unit-50">
-					<ul class="social list-flat right">
-						<li><a href="https://www.linkedin.com/in/offsetcolin/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-						<li><a href="https://github.com/offsetkeyz" target="_blank"><i class="fa fa-github-square"></i></a></li>
-					</ul>
-			    </div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Javascript -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
-    <script>
-		function newTyped(){{}}$(function(){{$("#typed").typed({{
-		// Change to edit type effect
-		strings: ["Automation", "Security", "Python", "Music", "Photography"],
-
-		typeSpeed:89,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){{newTyped()}}}}),$(".reset").click(function(){{$("#typed").typed("reset")}})}});
-    </script>
-    
+	{generate_skills(json_data.get('skills', None), json_data.get('specialty_skills', None))}
+	{generate_quote(json_data.get('basics'))}
+	{generate_footer(json_data)}
+	{generate_javascript(json_data)}    
 </body>
 </html>
 '''
 
     # Write the content to a markup file
-    with open("./draco-resume/resume_draco.html", "w") as file:
+    with open("./draco-resume/index.html", "w") as file:
         file.write(markup)

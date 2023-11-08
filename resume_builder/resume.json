@@ -3,7 +3,8 @@
   "basics": {
     "name": "Colin McAllister",
     "label": "Security Developer",
-    "image": "/img/colin.jpg",
+    "quote" : "Automate / Educate / Secure",
+    "image": "img/colin.jpg",
     "email": "clm@dr.com",
     "phone": "",
     "url": "https://colinmca.com",
