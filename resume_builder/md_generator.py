@@ -31,28 +31,28 @@ def generate_skills(skills=None, specialty_skills=None):
                 markdown += f"{keyword}"
                 if keyword != spskill['keywords'][-1]:
                     markdown += ", "
-            markdown += "\n"
+            markdown += "  \n"
     return markdown
 
 # Function to generate experience section
 def generate_experience(work_experience):
     markdown = "## Experience\n\n"
     for company, positions in work_experience.items():
-        markdown += f"### {company}\n"
+        markdown += f"### {company}  \n"
         for position in positions:
             responsibilities = position.get('responsibilities', None)
             skills = position.get('skills', None)
-            markdown += f"#### {position['job_title']}\n{position['start_date']} - {position['end_date']}, {position['location']}\n"
+            markdown += f"#### {position['job_title']}  \n{position['start_date']} - {position['end_date']}, {position['location']}  \n"
             if responsibilities:                
                 for responsibility in position['responsibilities']:
-                    markdown += f"- {responsibility}\n"
+                    markdown += f"- {responsibility}  \n"
             if skills:
+                markdown += f"*Technologies Used*: "
                 for skill in skills:
-                    markdown += f"**Technologies Used**: "
-                    markdown += f"{skill}"
+                    markdown += f"```{skill}```"
                     if skill != skills[-1]:
                         markdown += ", "
-                markdown += "```\n"
+                markdown += "  \n"
             
             markdown += "\n"
     return markdown
@@ -86,14 +86,14 @@ def generate_education(education):
             end_year = edu['endDate']
         
         markdown += f"### {str(edu['studyType'])} in {edu['area']} @ {edu['institution']}\n"
-        markdown += f"{start_year} - {end_year}\n"
+        markdown += f"{start_year} - {end_year}  \n"
         if honors:
-            markdown += f"- Honors: *{honors}*\n"
+            markdown += f"- Honors: *{honors}*  \n"
         if gpa:
-            markdown += f"- GPA: *{gpa}*\n"
+            markdown += f"- GPA: *{gpa}*  \n"
         if courses:
-            markdown += f"- Courses: {', '.join(edu['courses'])}\n"
-        markdown += "\n"
+            markdown += f"- Courses: {', '.join(edu['courses'])}  \n"
+        markdown += "  \n"
     return markdown
 
 # Function to generate awards section
@@ -102,8 +102,13 @@ def generate_awards(awards):
         return None
     markdown = "## Awards & Recognition\n\n"
     for award in awards:
-        markdown += f"- **{award['title']}** | {award['awarder']} ({award['date']})\n"
+        markdown += f"- **{award['title']}** | {award['awarder']} ({get_month_and_year(award['date'])})  \n"
     return markdown
+
+def get_month_and_year(date):
+    if date == 'Present':
+        return date
+    return datetime.strptime(date, '%Y-%m-%d').strftime('%b %Y')
 
 # Function to generate projects section
 def generate_projects(projects):
@@ -112,10 +117,10 @@ def generate_projects(projects):
     markdown = "## Projects\n\n"
     for project in projects:
         project_url = (project.get('url',None))
-        markdown += f"**{project['name']}**" + (f"[{project_url}]({project_url})" if project_url else "") + f" ({project['startDate']}-{project['endDate']})\n"
-        markdown += f"- {project['description']}\n"
+        markdown += f"**{project['name']}**" + (f"[{project_url}]({project_url})" if project_url else "") + f" ({get_month_and_year(project['startDate'])} - {get_month_and_year(project['endDate'])})  \n"
+        markdown += f"*{project['description']}*  \n"
         for highlight in project['highlights']:
-            markdown += f"  - {highlight}\n"
+            markdown += f"- {highlight}  \n"
         markdown += "\n"
     return markdown
 
@@ -135,8 +140,7 @@ def generate_contact_info(contact_info):
 
 if __name__ == "__main__":
     # Reading the JSON file
-    json_data = read_json_file('draco-resume/resume_builder/resume.json')
-    
+    json_data = read_json_file('resume.json')
     # Generating the markdown
     markdown = f'''---
 margin-left: 2cm
@@ -162,9 +166,9 @@ subject: 'Resume'
 {generate_awards(json_data.get('awards', None))}
 {generate_projects(json_data.get('projects', None))}
 
-<!-- pandoc resume.md -f markdown -t html -c resume-stylesheet.css -s -o resume.html -->
+<!-- pandoc colins_resume.md -f markdown -t html -c resume-stylesheet.css -s -o resume.html -->
 <!-- wkhtmltopdf --enable-local-file-access resume.html resume.pdf -->'''
 
     # Write the content to a Markdown file
-    with open("resume_draco.md", "w") as file:
+    with open("colins_resume.md", "w") as file:
         file.write(markdown)

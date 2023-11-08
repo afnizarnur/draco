@@ -207,7 +207,7 @@ def generate_javascript(json_data):
 
 if __name__ == "__main__":
     # Reading the JSON file
-    json_data = read_json_file('draco-resume/resume_builder/resume.json')
+    json_data = read_json_file('resume.json')
     
     # Generating the markup
     markup = f'''<!DOCTYPE html>
@@ -225,7 +225,11 @@ if __name__ == "__main__":
 </body>
 </html>
 '''
+#TODO Generate Projects
+#TODO Get Month and Year
+#TODO Migrate to different GH repo
+#TODO Write readme
 
     # Write the content to a markup file
-    with open("./draco-resume/index.html", "w") as file:
+    with open("../index.html", "w") as file:
         file.write(markup)

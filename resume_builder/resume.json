@@ -4,7 +4,7 @@
     "name": "Colin McAllister",
     "label": "Security Developer",
     "quote" : "Automate / Educate / Secure",
-    "image": "img/colin.jpg",
+    "image": "../img/colin.jpg",
     "email": "clm@dr.com",
     "phone": "",
     "url": "https://colinmca.com",
@@ -17,6 +17,10 @@
       {
         "title": "Website",
         "value": "colinmca.com"
+      },
+      {
+        "title": "Telegram",
+        "value": "@offsetkeyz"
       }
     ],
     "profiles": [
@@ -38,21 +42,33 @@
     "Arctic Wolf Networks": [
       {
         "job_title": "Security Developer",
-        "location": "San Antonio, TX",
-        "start_date": "July 2020",
+        "location": "Remote",
+        "start_date": "Nov 2022",
         "end_date": "Present",
-        "responsibilities": [
-          "coding and stuff"
-        ],
-        "skills": []
+        "responsibilities": [],
+        "skills": ["Python", "Security", "Source Control"]
       },
       {
         "job_title": "Business Analyst",
-        "location": "San Antonio, TX",
-        "start_date": "July 2019",
-        "end_date": "July 2020",
+        "location": "Remote",
+        "start_date": "Dec 2021",
+        "end_date": "Nov 2022",
         "responsibilities": [],
         "skills": []        
+      },
+      {
+        "job_title": "Team Captain",
+        "location": "San Antonio, TX",
+        "start_date": "July 2021",
+        "end_date": "Dec 2021",
+        "responsibilities": []
+      },
+      {
+        "job_title": "Triage Security Engineer",
+        "location": "San Antonio, TX",
+        "start_date": "Dec 2020",
+        "end_date": "Dec 2021",
+        "responsibilities": []
       }
     ]
   },
@@ -71,18 +87,26 @@
       ]
     },
     {
-      "institution": "SANS Technical Institute",
-      "url": "https://www.sans.edu/cyber-security-programs/masters-degree/",
-      "area": "Cyber Security",
-      "studyType": "Masters",
-      "startDate": "2023-07-01",
-      "endDate": "Present",
-      "score": "4.0",
+      "institution": "Auburn University",
+      "area": "Computer Science",
+      "studyType": "Bachelor's",
+      "startDate": "2020-01-01",
+      "endDate": "2021-11-01",
       "honors": "Summa Cum Laude",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "Algorithms",
+        "Data Structures",
+        "Software Development"
       ]
+    },
+    {
+      "institution": "University of Nevada Reno",
+      "area": "Music Education",
+      "studyType": "Bachelor's",
+      "startDate": "2008-01-01",
+      "endDate": "2012-01-01",
+      "score": "3.3",
+      "honors": "Dean's List"
     }
   ],
   "awards": [
@@ -95,6 +119,11 @@
       "title": "Triage Security Engineer 1 of the Quarter",
       "date": "2021-07-01",
       "awarder": "Arctic Wolf Networks"
+    },
+    {
+      "title": "Commandant's List",
+      "date": "2015-01-01",
+      "awarder": "Leadership Academy - US Army"
     }
   ],
   "certifications": [
@@ -122,9 +151,8 @@
   "skills": [
     "Excel",
     "AI Prompt Generation",
-    "Linux",
-    "Communication"
-  ],
+    "Linux"
+    ],
   "specialty_skills": [
     {
       "name": "Cyber Security",
@@ -141,8 +169,17 @@
       "keywords": [
         "Python",
         "Object Oriented Programming",
-        "Powershell",
+        "Git",
         "AWS"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "level": "",
+      "keywords": [
+        "Communication",
+        "Empathy",
+        "Leadership"
       ]
     }
   ],
@@ -154,40 +191,46 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "name": "Automation"
+    },
+    {
+      "name": "Security"
+    },
+    {
+      "name": "Education"
+    },
+    {
+      "name": "Photography"
+    },
+    {
+      "name": "Music"
     }
   ],
   "projects": [
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
+      "name": "Cloud Resume Challenge",
+      "description": "The first step to becoming a cloud engineer is to build and host your resume in the cloud.",
       "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+        "Resume is created using JSON Schema and automatically converted to HTML, Markdown, and PDF using Python",
+        "The HTML version of the resume is hosted on AWS S3 and served via CloudFront, with domain registered on Route53"
       ],
       "keywords": [
-        "GoogleMaps",
-        "Chrome Extension",
-        "Javascript"
+        "AWS",
+        "Cloud Resume Challenge",
+        "Python"
       ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
+      "startDate": "2023-10-01",
+      "endDate": "Present",
       "roles": [
-        "Team lead",
-        "Designer"
+        "Cloud Developer",
+        "Full Stack Developer"
       ],
-      "entity": "Smoogle",
       "type": "application"
     }
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/sample.resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2023-11-07"
   }
 }
